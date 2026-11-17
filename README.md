@@ -12,6 +12,22 @@ Each comparable launch is reduced to its launch-day shape: the log of each hour'
 
 On the four practice launches (Marvel's Wolverine, Red Dead Redemption 2, God of War Ragnarok, Marvel's Spider-Man 2) it scores a mean pinball loss of 0.201, against the house baseline's 0.387.
 
+## What it forecasts
+
+The charts below are real output from the practice launches: the program's forecasts against the actual Twitch viewer counts, plus its pinball loss against the house baseline.
+
+![God of War Ragnarok: forecast vs actual Twitch viewers, hours 1 to 24](screenshots/1-ragnarok.png)
+
+God of War Ragnarok, the best practice case: pinball loss 0.161, and the actual count stayed inside the 5-95% interval in all 23 forecast hours.
+
+![Marvel's Wolverine: forecast vs actual Twitch viewers, hours 1 to 24](screenshots/2-wolverine.png)
+
+Marvel's Wolverine, the hardest practice case: pinball loss 0.298. The evening surge (actual peak 212,243 viewers at hour 21) ran above the forecast median, which is why this case scores worst.
+
+![Pinball loss on the four practice launches, this forecast vs the house baseline](screenshots/3-losses.png)
+
+Across all four practice launches the mean pinball loss is 0.201 against the house baseline's 0.387.
+
 ## Run it
 
 ```sh
